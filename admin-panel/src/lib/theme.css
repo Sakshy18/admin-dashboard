@@ -1,0 +1,26 @@
+@import "tailwindcss";
+rking version */
+:root {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --background: #F7F9FB;
+  --foreground: #1C1C1C;
+  --border: #1C1C1C33;
+}
+
+.snow-bg {
+  background-color: var(--background) !important;
+}
+
+.text-foreground {
+  color: var(--foreground) !important;
+}
+
+.border-snow-black-33 {
+  border-color: var(--border) !important;
+}
+
+/* Layout dimensions */
+.h-header { height: 68px; }
+.w-sidebar { width: 212px; }
+.w-rightbar { width: 280px; }

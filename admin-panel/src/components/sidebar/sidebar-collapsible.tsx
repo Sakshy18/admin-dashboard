@@ -27,9 +27,9 @@ export function SidebarCollapsible({
         "
       >
         {open ? (
-          <ChevronDown size={16} className="text-snow-black-66" />
+          <ChevronDown size={16} className="text-(--snow-black-20)" />
         ) : (
-          <ChevronRight size={16} className="text-snow-black-66" />
+          <ChevronRight size={16} className="text-(--snow-black-20)" />
         )}
 
         {icon && (

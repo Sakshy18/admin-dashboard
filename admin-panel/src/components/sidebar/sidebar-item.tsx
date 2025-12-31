@@ -4,7 +4,6 @@ export function SidebarItem({
   icon,
   label,
   chevron,
-  active,
   onClick,
 }: {
   icon?: React.ReactNode;
@@ -25,17 +24,21 @@ export function SidebarItem({
         text-snow-black
       "
     >
-      {icon && (
-        <span className="text-snow-black-66">
-          {icon}
-        </span>
-      )}
+{chevron && (
+  <ChevronRight size={16} className="text-(--snow-black-20)" />
+)}
 
-      <span className="flex-1">{label}</span>
+{icon ? (
+  <span className="text-(--snow-black-66)">
+    {icon}
+  </span>
+) : (
+  <span className="h-2 w-2 rounded-full bg-(--snow-black-10)" />
+)}
 
-      {chevron && (
-        <ChevronRight size={16} className="text-snow-black-66" />
-      )}
+<span className="flex-1">{label}</span>
+
+
     </div>
   );
 }

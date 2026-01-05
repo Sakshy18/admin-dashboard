@@ -1,8 +1,6 @@
 import ContactItem from "./ContactItem";
 import Activity1 from "@/assets/svg/Activity1.svg";
 import Activity2 from "@/assets/svg/Activity2.svg";
-import Activity3 from "@/assets/svg/Activity3.svg";
-
 import Activity4 from "@/assets/svg/Activity4.svg";
 
 import Activity15 from "@/assets/svg/Activity15.svg";

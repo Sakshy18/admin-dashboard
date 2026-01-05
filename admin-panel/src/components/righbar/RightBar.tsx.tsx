@@ -13,7 +13,7 @@ export default function RightBar() {
         p-[20px]
         flex flex-col
         gap-[24px]
-        bg-white
+         bg-[var(--background)]
       "
     >
       <NotificationsSection />

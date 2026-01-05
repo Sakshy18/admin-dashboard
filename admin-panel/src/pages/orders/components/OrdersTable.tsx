@@ -42,7 +42,7 @@ export function OrdersTable({
         return (
           <div
             key={order.id}
-            className="grid items-center border-b border-[rgba(28,28,28,0.05)] hover:bg-[#F7F9FB]"
+            className="grid items-center border-b border-[rgba(28,28,28,0.05)] hover:bg-[var(--chart-text-toolbox)]"
             style={{
               gridTemplateColumns: GRID_TEMPLATE_COLUMNS,
               height: 40,
@@ -85,22 +85,22 @@ export function OrdersTable({
               />
             </div>
 
-            <Cell>{order.orderId}</Cell>
-            <Cell className="flex items-center gap-2">
+            <Cell className="text-[var(--chart-text-muted)]">{order.orderId}</Cell>
+            <Cell className="flex items-center gap-2 text-[var(--chart-text-muted)]">
               <img
                 src={order.avatar}
-                className="h-6 w-6 rounded-full"
+                className="h-6 w-6 rounded-full "
               />
               {order.user}
             </Cell>
            <Cell>
-  <span className="truncate">
+  <span className="truncate text-[var(--chart-text-muted)]">
     {order.project}
   </span>
 </Cell>
 
-            <Cell>{order.address}</Cell>
-          <Cell className="gap-2 text-[rgba(28,28,28,0.6)]">
+            <Cell className="text-[var(--chart-text-muted)]">{order.address}</Cell>
+          <Cell className="gap-2 text-[var(--chart-text-muted)]">
   <Calendar size={14} />
   {order.date}
 </Cell>

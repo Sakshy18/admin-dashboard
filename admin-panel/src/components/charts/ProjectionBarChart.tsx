@@ -39,7 +39,7 @@ export default function ProjectionBarChart() {
     dataLabels: { enabled: false },
 
     grid: {
-      borderColor: "rgba(28,28,28,0.05)",
+       borderColor: "var(--chart-grid)",
       padding: {
         top: 0,
         bottom: 0,
@@ -56,7 +56,7 @@ export default function ProjectionBarChart() {
         offsetX: -10,
         style: {
           fontSize: "12px",
-          colors: "rgba(28,28,28,0.4)",
+         colors: "var(--chart-text-muted)",
         },
         formatter: (v) => (v === 0 ? "0" : `${v}M`),
       },
@@ -70,7 +70,7 @@ export default function ProjectionBarChart() {
         offsetY: -2,
         style: {
           fontSize: "12px",
-          colors: "rgba(28,28,28,0.4)",
+          colors: "var(--chart-text-muted)",
         },
       },
     },

@@ -6,7 +6,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { useEffect, useRef } from "react";
-
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,16 +13,20 @@ import {
   Star,
   Search,
   Sun,
+  Moon,
   Clock,
   Bell,
   PanelRight,
 } from "lucide-react";
 
 type HeaderProps = {
-  onToggleRightBar: () => void;
+ onToggleRightBar: () => void;
+  onToggleTheme: () => void;
+  theme: "light" | "dark";
 };
 
-export default function Header({ onToggleRightBar }: HeaderProps) {
+export default function Header({ onToggleRightBar, onToggleTheme, theme }: HeaderProps) {
+
   const searchRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -124,9 +127,13 @@ export default function Header({ onToggleRightBar }: HeaderProps) {
 </div>
 
         <div className="ml-5 flex items-center gap-2 h-7">
-          <Button variant="ghost" size="icon" className="h-7 w-7 rounded-lg">
-            <Sun className="h-4 w-4" />
-          </Button>
+         <button
+  onClick={onToggleTheme}
+  className="p-2 rounded-[8px]"
+  aria-label="Toggle theme"
+>
+  {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+</button>
 
           <Button variant="ghost" size="icon" className="h-7 w-7 rounded-lg">
             <Clock className="h-4 w-4" />

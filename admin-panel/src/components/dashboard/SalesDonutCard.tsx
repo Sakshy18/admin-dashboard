@@ -4,7 +4,7 @@ export default function SalesDonutCard() {
   return (
     <div
       className="
-        bg-[#F7F9FB]
+       bg-[var(--chart-card-bg)]
         rounded-[16px]
         p-[24px]
         flex flex-col items-center
@@ -14,7 +14,7 @@ export default function SalesDonutCard() {
         relative
       "
     >
-      <div className="w-full text-[14px] font-semibold text-[#1C1C1C]">
+      <div className="w-full text-[14px] font-semibold text-[var(--chart-text-primary)]">
         Total Sales
       </div>
 
@@ -28,7 +28,7 @@ export default function SalesDonutCard() {
 }
 function Legend() {
   return (
-    <div className="w-[154px] flex flex-col gap-[12px]">
+    <div className="w-[154px] flex flex-col gap-[12px] ">
       <LegendRow color="#1C1C1C" label="Direct" value="$300.56" />
       <LegendRow color="#BAEDBD" label="Affiliate" value="$135.18" />
       <LegendRow color="#95A4FC" label="Sponsored" value="$154.02" />
@@ -53,12 +53,12 @@ function LegendRow({
           className="w-[8px] h-[8px] rounded-full"
           style={{ backgroundColor: color }}
         />
-        <span className="text-[12px] text-[#1C1C1C]">
+        <span className="text-[12px] text-[var(--chart-text-primary)]">
           {label}
         </span>
       </div>
 
-      <span className="text-[12px] text-[#1C1C1C]">
+      <span className="text-[12px] text-[var(--chart-text-primary)]">
         {value}
       </span>
     </div>

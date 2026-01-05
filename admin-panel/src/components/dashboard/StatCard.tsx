@@ -5,11 +5,16 @@ type StatCardProps = {
   variant?: "blue" | "gray" | "softBlue";
   trend?: "up" | "down";
 };
-
 const bgMap = {
   blue: "bg-[#E3F5FF]",
-  gray: "bg-[#F7F9FB]",
   softBlue: "bg-[#E5ECF6]",
+  gray: "bg-[var(--chart-card-bg)]",
+};
+
+const textMap = {
+  blue: "text-[#1C1C1C]",
+  softBlue: "text-[#1C1C1C]",
+  gray: "text-[var(--foreground)]",
 };
 
 export default function StatCard({
@@ -26,23 +31,24 @@ export default function StatCard({
         p-[24px]
         w-[202px] min-w-[200px] h-[112px]
         rounded-[16px]
-        ${bgMap[variant]}
+      ${bgMap[variant]}
+        ${textMap[variant]}
       `}
     >
       {/* Title */}
       <div className="h-[20px] flex items-center">
-        <span className="text-[14px] font-semibold leading-[20px] text-[#1C1C1C]">
+        <span className="text-[14px] font-semibold leading-[20px] ">
           {title}
         </span>
       </div>
 
       <div className="w-full h-[36px] flex items-center justify-between">
-        <span className="text-[24px] font-semibold leading-[36px] text-[#1C1C1C]">
+        <span className="text-[24px] font-semibold leading-[36px]">
           {value}
         </span>
 
         <div className="flex items-center gap-[4px]">
-          <span className="text-[12px] leading-[18px] text-[#1C1C1C]">
+          <span className="text-[12px] leading-[18px]">
             {delta}
           </span>
 

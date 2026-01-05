@@ -2,6 +2,10 @@ import ReactApexChart from "react-apexcharts";
 import type { ApexOptions } from "apexcharts";
 
 export default function RevenueLineChart() {
+ const isDark =
+  typeof window !== "undefined" &&
+  document.documentElement.classList.contains("dark");
+
 const series = [
  
   {
@@ -97,9 +101,16 @@ fill: {
     show: false,
   },
 
-  tooltip: {
-    theme: "light",
+tooltip: {
+  enabled: true,
+  theme: isDark ? "dark" : "light",
+  style: {
+    fontSize: "12px",
+    fontFamily: "Inter, sans-serif",
   },
+},
+
+
 };
 
 

@@ -13,7 +13,7 @@ export default function ContactItem({ icon,name }: ContactItemProps) {
       className="w-[24px] h-[24px]"
     />
 
-      <span className="text-[14px] text-[#1C1C1C] leading-[20px]">
+      <span className="text-[14px] text-[var(--foreground)] leading-[20px]">
         {name}
       </span>
     </div>

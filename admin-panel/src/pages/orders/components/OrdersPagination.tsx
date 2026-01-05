@@ -30,7 +30,7 @@ export function OrdersPagination({ page, totalPages, onChange }: Props) {
             className={`
               h-7 w-7 rounded-[8px]
               text-sm flex items-center justify-center
-              ${isActive ? "bg-[rgba(28,28,28,0.05)]" : ""}
+              ${isActive ? "bg-[var(--chart-text-toolbox)]" : ""}
             `}
           >
             {p}

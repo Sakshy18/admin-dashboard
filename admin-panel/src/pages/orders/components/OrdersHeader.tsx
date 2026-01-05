@@ -73,7 +73,7 @@ export default function OrdersHeaderRow({
           <button
             key={col.key}
             onClick={() => col.sortKey && onSort(col.sortKey)}
-            className="flex items-center gap-1 px-[12px] text-left text-[12px] text-[rgba(28,28,28,0.4)] hover:text-[#1C1C1C]"
+            className="flex items-center gap-1 px-[12px] text-left text-[12px] text-[var(--chart-text-primary)] hover:text-[#1C1C1C]"
           >
             {col.label}
             {col.sortable && (

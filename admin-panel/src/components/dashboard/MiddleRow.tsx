@@ -1,5 +1,5 @@
 
-import SalesMapCard from "../charts/SalesMapChart";
+import SalesMapCard from "../charts/SalesMapCard";
 import RevenueCard from "./RevenueCard";
 export default function MiddleRow() {
   return (

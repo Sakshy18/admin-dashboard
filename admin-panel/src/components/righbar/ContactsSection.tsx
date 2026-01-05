@@ -7,7 +7,7 @@ import Activity15 from "@/assets/svg/Activity15.svg";
 export default function ContactsSection() {
   return (
     <div className="flex flex-col gap-[8px]">
-      <h3 className="text-[14px] font-semibold text-[#1C1C1C] px-[4px] py-[8px]">
+      <h3 className="text-[14px] font-semibold text-[var(--foreground)] px-[4px] py-[8px]">
         Contacts
       </h3>
 

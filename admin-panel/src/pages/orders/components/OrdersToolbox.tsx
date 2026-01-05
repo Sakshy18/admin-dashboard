@@ -16,7 +16,7 @@ export function OrdersToolbar({
   onSort,
 }: Props) {
   return (
-    <div className="flex items-center justify-between h-[44px] p-[8px] gap-[16px] bg-[#F7F9FB] rounded-[8px]">
+    <div className="flex items-center justify-between h-[44px] p-[8px] gap-[16px] bg-[var(--chart-text-toolbox)] rounded-[8px]">
  
       <div className="flex items-center gap-[8px]">
         <IconButton onClick={onAdd}>
@@ -63,7 +63,7 @@ function IconButton({
         h-[28px] w-[28px]
         flex items-center justify-center
         rounded-[8px]
-        text-[#1C1C1C]
+        text-[var(--snow-black-100)]
         hover:bg-[rgba(28,28,28,0.05)]
       "
     >

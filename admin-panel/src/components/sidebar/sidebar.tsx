@@ -26,7 +26,7 @@ export default function Sidebar() {
        border-r border-r-(--snow-black-10)
         px-4 pt-5 pb-3
         flex flex-col gap-4
-        bg-white
+       bg-[var(--background)] text-[var(--foreground)]
       "
     >
 

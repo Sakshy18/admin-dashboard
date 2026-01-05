@@ -15,10 +15,10 @@ export default function ActivityItem({icon, text, time }: ActivityItemProps) {
     />
 
       <div className="flex flex-col">
-        <span className="text-[14px] text-[#1C1C1C] leading-[20px]">
+        <span className="text-[14px] text-[var(--foreground)] leading-[20px]">
           {text}
         </span>
-        <span className="text-[12px] text-[rgba(28,28,28,0.4)] leading-[18px]">
+        <span className="text-[12px] text-[var(--chart-text-muted)] leading-[18px]">
           {time}
         </span>
       </div>

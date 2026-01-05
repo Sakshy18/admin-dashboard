@@ -2,8 +2,8 @@ import React from "react";
 
 export default function TopSellingProductsCard() {
   return (
-    <div className="bg-[#F7F9FB] rounded-[16px] p-[24px] w-full min-w-[662px]">
-      <h3 className="text-[14px] font-semibold text-[#1C1C1C] mb-[4px]">
+    <div className="bg-[var(--chart-card-bg)] rounded-[16px] p-[24px] w-full min-w-[662px]">
+      <h3 className="text-[14px] font-semibold text-[var(--chart-text-primary)] mb-[4px]">
         Top Selling Products
       </h3>
 
@@ -80,7 +80,7 @@ function ColumnAmount() {
 function HeaderCell({ children }: { children: React.ReactNode }) {
   return (
     <div className="h-[40px] px-[12px] flex items-center border-b border-[rgba(28,28,28,0.2)]">
-      <span className="text-[12px] text-[rgba(28,28,28,0.4)]">
+      <span className="text-[12px] text-[var(--chart-text-muted)]">
         {children}
       </span>
     </div>
@@ -90,7 +90,7 @@ function HeaderCell({ children }: { children: React.ReactNode }) {
 function BodyCell({ children }: { children: React.ReactNode }) {
   return (
     <div className="h-[40px] px-[12px] flex items-center">
-      <span className="text-[12px] text-[#1C1C1C]">
+      <span className="text-[12px] text-[var(--chart-text-primary)]">
         {children}
       </span>
     </div>

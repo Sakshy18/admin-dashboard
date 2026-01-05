@@ -9,7 +9,7 @@ import NotificationItem from "./NotificationItem";
 export default function NotificationsSection() {
   return (
     <div className="flex flex-col gap-[8px]">
-      <h3 className="text-[14px] font-semibold text-[#1C1C1C] px-[4px] py-[8px]">
+      <h3 className="text-[14px] font-semibold text-[var(--foreground)] px-[4px] py-[8px]">
         Notifications
       </h3>
 

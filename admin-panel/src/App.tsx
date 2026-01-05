@@ -1,9 +1,11 @@
 import Layout from "./components/layout";
+import DashboardPage from "./pages/dashboard";
 
 export default function App() {
   return (
     <Layout>
-      <div className="h-300 rounded-lg border border-dashed border-snow-black-33" />
+       <DashboardPage />
+      {/* <div className="h-300 rounded-lg border border-dashed border-snow-black-33" /> */}
     </Layout>
   );
 }

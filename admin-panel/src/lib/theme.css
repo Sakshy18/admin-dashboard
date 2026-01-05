@@ -12,5 +12,17 @@
   --snow-black-33: rgba(28, 28, 28, 0.33);
   --snow-black-40: rgba(28, 28, 28, 0.4);
   --snow-black-66: rgba(28, 28, 28, 0.66);
+  --chart-card-bg: #F7F9FB;
+  --chart-radius: 16px;
+
+  --chart-grid: rgba(28, 28, 28, 0.05);
+  --chart-grid-strong: rgba(28, 28, 28, 0.2);
+
+  --chart-text-muted: rgba(28, 28, 28, 0.4);
+  --chart-text-primary: #1C1C1C;
+
+  --chart-line-primary: #1C1C1C;
+  --chart-line-secondary: #A8C5DA;
+
 
 }

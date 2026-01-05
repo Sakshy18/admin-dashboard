@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Sidebar from "./sidebar/sidebar";
 import Header from "./header";
-import RightBar from "./right-bar";
+import RightBar from "./righbar/RightBar.tsx";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isRightBarOpen, setIsRightBarOpen] = useState(false);
@@ -44,6 +44,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   >
     <RightBar />
   </div>
+ 
 </aside>
 
       </div>
